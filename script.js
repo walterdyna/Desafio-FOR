@@ -17,7 +17,7 @@ function search(){
 
     for (let i = 0; i < contacts.length; i++) {
         
-        if (input.value === contacts[i].name) {
+        if (input.value.toLocaleLowerCase === contacts[i].name.toLocaleLowerCase) {
             p.innerHTML = `Contato encontrato Nome: ${contacts[i].name} Tel: ${contacts[i].phone}`;
             break
         } else {
